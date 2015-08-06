@@ -1,0 +1,40 @@
+# Title of your blog; shows in the header
+name: "stephenson"
+
+# Description of your content (will only be used on Google Search)
+description: "Steve Stephenson, Designer, Developer, Artist"
+
+# Your name. Will show in your footer + sidebar 
+author: "Steven Stephenson"
+
+url: "http://stevenstephenson.com"
+#baseurl: ""
+
+# A short presentation of yourself. Will show in the sidebar, under your name. Best usage would be between 30 to 50 words. 
+#author-bio: "I'm a senior web developer at idfive. When I'm not developing sites, I'm creating [art][http://www.imagekind.com/artists/SC_Stephenson/The%20Experimental%20/fine-art-prints] and planning a wedding :)"
+
+# Social Accounts (mine, as placeholders)
+
+twitter: creativeowtlaw
+github: https://github.com/steveiscreative
+instagram: http://instagram.com/creativeowtlaw
+
+# Google Analytics (you may want to changes these with yours or even delete :)
+
+ga_domain: stevenstephenson.com
+ga_tracking_id: UA-12387202-1
+
+# Other (refer to http://jekyllrb.com/docs/home/ for further details on the below)
+
+markdown: kramdown
+permalink: pretty
+highlighter: pygments
+
+paginate: 8
+paginate_path: "/page/:num"
+
+# SCSS
+
+sass:
+  sass_dir: _scss
+  style: :compressed
