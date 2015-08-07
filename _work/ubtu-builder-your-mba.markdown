@@ -11,4 +11,5 @@ view_link: true
 
 For this project I was responsible for developing a small, one-page application. 
 The app walks potential students through a series of steps to determine their possible course workload before applying to the school.
-This app was built using Angular.
+
+Besides developing the builder tool, I was responsible for integrating the whole site into OmniUpdate.
