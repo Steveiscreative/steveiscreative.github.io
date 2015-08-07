@@ -21,6 +21,10 @@ authorTwitter:  'creativeowtlaw'
 
 permalink:       /:year/:title/
 
+collections:
+    work:
+        output: true
+        permalink: /work/:path/
 defaults:
     -
         scope:
@@ -40,3 +44,9 @@ defaults:
             type: drafts
         values:
             layout: post
+    -
+        scope:
+            path: ""
+            type: work
+        values:
+            layout: work
