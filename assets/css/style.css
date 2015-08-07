@@ -182,8 +182,8 @@ a,
 	transition: all 0.15s ease;
 }
 
-ul 	{ margin:0; padding:0; }
-li	{ list-style-type:circle; list-style-position:inside; }
+ul, ol 	{ margin:10px 20px; padding:0; }
+.x-li	{ list-style-type:circle; list-style-position:inside; }
 
 /* Line Height */
 #post-body, p { line-height:1.7; }
