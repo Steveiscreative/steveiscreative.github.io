@@ -9,7 +9,7 @@ view: http://www.rosecomm.com
 view_link: true
 ---
 
-To kick RoseComm's 10 year anniversary RoseComm I assisted them with creating a fresh, modern and professional website to accompany their updated brand.
+To kickoff RoseComm's 10 year anniversary RoseComm, I assisted them with creating a fresh, modern and professional website to accompany their updated brand.
 
 
 
