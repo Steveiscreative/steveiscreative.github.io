@@ -1,5 +1,5 @@
 ---
-title:  "Systems and the components of systems thinking"
+title:  "Systems and their Components"
 description: 
 date:   2015-08-10 22:30:00
 ---
