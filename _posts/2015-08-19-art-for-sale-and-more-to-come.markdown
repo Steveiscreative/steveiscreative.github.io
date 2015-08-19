@@ -7,10 +7,10 @@ date: 2015-08-19
 If you have sometime, please go and [visit my art page][imagekind]. I'll be retiring most of these soon to sell some new stuff. 
 
 ## Black Magic Women
-![Black Magic Woman](/assets/2015-08-19/black-magic.jpeg)
+![Black Magic Woman](/assets/images/2015-08-19/black-magic.jpeg)
 
 ## Three Little Women
-![Three Little Women](/assets/2015-08-19/three.jpeg)
+![Three Little Women](/assets/images/2015-08-19/three.jpeg)
 
 
 [View More][imagekind]
