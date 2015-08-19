@@ -8,7 +8,7 @@ A couple of months, I had decided to move from my hosting provider of 8 years, a
 
 The final step, which was completed moments ago, was finding an email hosting solution and setting up my @stevenstephenson.com email addresses. I like to separate my personal stuff and business. If you're in the same boat, and your looking for something free, I'd suggest [Zoho mail][zoho_mail]. It wasn't unbarable to setup and if you use any other Zoho products it'll fit in well with your current system.
 
-Anyhow, I've completed my migration and I'm not spending a forunte hosting and managing sites. Yaaay!
+Anyhow, I've completed my migration and I'm not spending a fortune hosting and managing sites. Yaaay!
 
 
 [zoho_mail]: https://www.zoho.com/mail/
