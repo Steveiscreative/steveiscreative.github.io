@@ -1,7 +1,7 @@
 ---
 title:  "Top 10..."
 description: "My new addiction"
-## 2015-08-28
+date: 2015-08-28
 ---
 
 Lately, I've been addicted to these damn 'Top 10 (5,15,20,etc...)' videos on YouTube. It's pretty scary how many I've watched this week alone. 
