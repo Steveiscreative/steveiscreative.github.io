@@ -1,10 +1,10 @@
 ---
 title:  "Developing a MEAN Application, Part I"
-description: Part I, planning out the application
+description:
 date:   2015-08-07 23:50:00
 ---
 
-Toward the end of last month I gave myself the task of developing 18-20 small/medium sized applications by the end of the year. It's been only a couple of weeks, I think one and a half weeks to be exact. The first application I could think of is a contact manager system, a fancy way of saying phone book. So today, I'll be going over the the planning phase developing the application and in later I'll be going over Mongo, Express and Node in one post, then have a post dedicated to building the app in Angular. As a caveat, I wont really go into depth about MEAN, if aren't familiar with the MEAN stack, I'd start with looking at the [mean.io][mean] site. Also, to simplify your learning, I'd learn a bit about the individual pieces before trying to put everything together. 
+Toward the end of last month I gave myself the task of developing 18-20 small/medium sized applications by the end of the year. It's been only a couple of weeks, I think one and a half weeks to be exact. The first application I could think of is a contact manager system, a fancy way of saying phone book. So today, I'll be going over the the planning phase developing the application and in later I'll be going over Mongo, Express and Node in one post, then have a post dedicated to building the app in Angular. As a caveat, I wont really go into depth about MEAN, if aren't familiar with the MEAN stack, I'd start with looking at the [mean.io][mean] site. Also, to simplify your learning, I'd learn a bit about the individual pieces before trying to put everything together.
 
 ## Planning
 Before diving in and developing a full blown out application I usually spend about an hour just thinking things through and laying out the foundation. I design the database, choose the technologies, sketch out UI's, map out api endpoints, and by the end of the planning phase I have a rough road map of how I'm going to develop the application. For this application, I'm going to keep it as simple as possible.
@@ -43,7 +43,7 @@ Prior to this point, I would have determined the technologies that the applicati
  api/contacts:/:id   DELETE      delete specified contact
 ```
 
-Alright, so now I have a basic idea of how I'm developing this app, now I get to the fun part. Next post, I'll be covering setting up a node server (Node, Express) and the database (Mongo). 
+Alright, so now I have a basic idea of how I'm developing this app, now I get to the fun part. Next post, I'll be covering setting up a node server (Node, Express) and the database (Mongo).
 
 
 [mean]: http://mean.io/#!/

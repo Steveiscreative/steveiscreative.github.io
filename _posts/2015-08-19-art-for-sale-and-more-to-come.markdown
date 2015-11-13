@@ -1,10 +1,10 @@
 ---
 title:  "Art for Sale"
-description: Buy some prints before it's too late!
+description:
 date: 2015-08-19
 ---
 
-If you have sometime, please go and [visit my art page][imagekind]. I'll be retiring most of these soon to sell some new stuff. 
+If you have sometime, please go and [visit my art page][imagekind]. I'll be retiring most of these soon to sell some new stuff.
 
 ## Black Magic Women
 ![Black Magic Woman](/assets/images/2015-08-19/black-magic.jpeg)

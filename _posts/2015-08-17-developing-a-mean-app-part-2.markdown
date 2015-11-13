@@ -1,12 +1,12 @@
 ---
 title:  "Developing a MEAN application, Part II"
-description: Part Two of our tutorial where I'll go over how to create a node server and setup a mongodb database 
+description:
 date: 2015-08-17
 ---
 
-In [part one][part_1], we started planning out our MEAN application. In this post, we'll get the node server up and running, setup our database using mongodb, and finally, setup our RESTful api that our application will interact with.s 
+In [part one][part_1], we started planning out our MEAN application. In this post, we'll get the node server up and running, setup our database using mongodb, and finally, setup our RESTful api that our application will interact with.s
 
-Before we get started, we'll need to setup and pull in our project dependencies. To do this, create a package.json file with the following: 
+Before we get started, we'll need to setup and pull in our project dependencies. To do this, create a package.json file with the following:
 
 ```
 // file: package.json
@@ -29,7 +29,7 @@ npm install
 ```
 
 ## Server Setup
-Alright, once we have all our dependencies, we're ready to get started. We'll start off by creating a file named server.js and establishing our dependencies and some global variables. 
+Alright, once we have all our dependencies, we're ready to get started. We'll start off by creating a file named server.js and establishing our dependencies and some global variables.
 
 ```
 file: server.js
@@ -96,7 +96,7 @@ var Contact = new mongoose.Schema({
 ```
 
 ### Creating a Model
-Once we've created the schema, we'll create a model that maps to the schema. Models allow for us to retrieve and manipulate documents (data) in the mongo database. 
+Once we've created the schema, we'll create a model that maps to the schema. Models allow for us to retrieve and manipulate documents (data) in the mongo database.
 
 ```
 // Model
@@ -104,7 +104,7 @@ var ContactModel = mongoose.model('Contact', Contact);
 ```
 
 ## Restful API (endpoints & responses)
-Now that we've created our server and setup our database, now we can connect the two and create our restful api. 
+Now that we've created our server and setup our database, now we can connect the two and create our restful api.
 
 ### Return all contacts
 
@@ -213,11 +213,11 @@ Once we've finish setting up the server we can run the server. To do this, run t
 ```
 
 ## Testing
-Once we've setup everything, the last thing we'll do is test our API. For this we'll use [Postmon][postmon] but any Restful service tester will do. 
+Once we've setup everything, the last thing we'll do is test our API. For this we'll use [Postmon][postmon] but any Restful service tester will do.
 
 
-## Fin. 
-And we're done! Now that we've created our server and api, we can start building our application. In part three, I'll be going over how to create an Angular application that interacts with the server we've just hooked up. 
+## Fin.
+And we're done! Now that we've created our server and api, we can start building our application. In part three, I'll be going over how to create an Angular application that interacts with the server we've just hooked up.
 
 
 [part_1]: /2015/developing-a-mean-application-part-1/

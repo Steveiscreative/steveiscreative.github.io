@@ -1,22 +1,22 @@
 ---
 title:  "Developing a MEAN application, Part III"
-description: The last of a three part series. In this post we'll be going over the Angular portion of the application.
+description:
 categories: javascript, frontend, application development
 date: 2015-10-29
 ---
 
-Three words. "About...Damn...Time..." 
+Three words. "About...Damn...Time..."
 
-It has been a while since I've written anything. Not only have I've dedicated time to publish a post every Thursday, but now I can finally alleviate the guilt of me not posting anything on a regular basis. Horray! So without further ado, here's the last and final post of this series. 
+It has been a while since I've written anything. Not only have I've dedicated time to publish a post every Thursday, but now I can finally alleviate the guilt of me not posting anything on a regular basis. Horray! So without further ado, here's the last and final post of this series.
 
 Today, I'll be going over the the Angular portion of this application. To be frank, as I started developing this portion of the application, I notice major flaws in thinking and functionality of this app. Instead of going back an editing past post and functionality, I've decided to keep what I have and build out the functionality as planned in the previous post. And while it was painful to keep everything completely as is, I treated this as an experience to learn from and next time I won't make the same mistakes as before... hopefully.
 
 So we've reached the conclusion of this three part tutorial of building a "MEAN" Application. And if you haven't read parts one and/or two, I'd highly recommend reading them; the links are below. In this post, If you'd like to skip ahead and go through the source code, then that's available on my [github account][github].
 
-So, let get started. 
+So, let get started.
 
 ## Folder Structure
-When starting applications, I always start with (and oddly spend the most time on) folder structure and this project isn't any different. After some research on different approaches for structuring Angular applications, I landed on a folder structure that separates the application by components. In this simple example, components are the different views along with they're respective controllers. I've also added a common folder to house functionality that's share throughout the application. 
+When starting applications, I always start with (and oddly spend the most time on) folder structure and this project isn't any different. After some research on different approaches for structuring Angular applications, I landed on a folder structure that separates the application by components. In this simple example, components are the different views along with they're respective controllers. I've also added a common folder to house functionality that's share throughout the application.
 
 ```
 |- src
@@ -35,7 +35,7 @@ When starting applications, I always start with (and oddly spend the most time o
 			|- view
 				|- view.tmpl.html
 				|- viewContactController.js
-		|- home 
+		|- home
 			|- home.tmpl.html
 			|- homeController.js
 	|- assets
@@ -48,15 +48,15 @@ server.js
 
 ## Project Dependencies
  For this project we have a couple of dependencies and to manage these dependencies we'll be using bower. First, we'll set up the .bowerrc file, here we'll specify the path of where we'd like the bower components to download, this isn't necessary, but I've always have had a disliking for the default 'bower_components' folder.
- 
+
 ```
 {
   "directory": "src/vendor"
 }
 ```
- 
+
  Once we've set up the .bowerrc file, we can setup our bower.json file. For this project, we'll be using Skeleton CSS, UI Router, and Angular Resource.
- 
+
  ```
  {
    "name": "Contacts Mini - Angular",
@@ -79,17 +79,17 @@ server.js
  ```
 
  Once we've set this up, we'll run.
- 
- 
+
+
  ```
  bower install
  ```
 
- 
+
  ## Application Shell
- 
+
  Now that we have all of our dependencies, we can now set up our index file.
- 
+
 ```
  <!DOCTYPE html>
  <html ng-app="contactsMini">
@@ -117,13 +117,13 @@ server.js
      </div>
  </footer>
  <!-- end footer -->
- 
+
  <!-- Angular -->
  <!--<script src="vendor/angular-loader/angular-loader.min.js"></script>-->
  <script src="vendor/angular/angular.min.js"></script>
  <script src="vendor/angular-resource/angular-resource.min.js"></script>
  <script src="vendor/ui-router/release/angular-ui-router.min.js"></script>
- 
+
  <!-- App -->
  <script src="app/contactsmini.js"></script>
  <script src="app/common/models/contacts-model.js"></script>
@@ -131,14 +131,14 @@ server.js
  <script src="app/contact/view/viewContactController.js"></script>
  <script src="app/contact/add/addContactController.js"></script>
  <script src="app/contact/edit/editContactController.js"></script>
- 
+
  </body>
  </html>
 ```
- 
+
 
 ## Application Settings
-From here we can setup our angular app in the app/contactsmini.js file. Here we'll include our Angular dependencies, as well as some global configurations for the application, such as routes. 
+From here we can setup our angular app in the app/contactsmini.js file. Here we'll include our Angular dependencies, as well as some global configurations for the application, such as routes.
 For routing we'll be using UI-Router. Using UI-Router, we'll establish our 'states', when establishing states will declare the URL, templateURL and Controller, you can think of this as the glue that connects the controller and view together.
 
 ```
@@ -173,7 +173,7 @@ app.config(function ($stateProvider, $urlRouterProvider) {
 
 });
 ```
- 
+
 
 ## Model (Factory)
 Once our application settings have been set, we can now setup our model. The model will be used in our controllers and will be responsible for making request to the database and returning records.
@@ -182,13 +182,13 @@ Sidenote: When I say model, I mean factory or services in terms of Angular. Pers
 
 
 /src/app/common/models/contacts-models.js :
- 
+
 ```
 /**
  * Contacts Service
  * Interacts with the contact api
  */
- 
+
 app.factory('ContactsService', function($resource) {
     return $resource('/api/contacts/:id', {'id': '@_id'}, {
         update: {
@@ -383,7 +383,7 @@ app/contact/edit/edit.tmpl.html:
 
 #### View
 
-app/contact/view/viewContactController.js: 
+app/contact/view/viewContactController.js:
 
 ```
 app.controller("ViewContactController", ViewContactController);
@@ -427,7 +427,7 @@ That's it! We're done. We've build a MEAN application! This isn't really a full 
 
 
 
-## Mean Application Series 
+## Mean Application Series
 - [Developing a MEAN application, Part I][part1]
 - [Developing a MEAN application, Part II][part2]
 
