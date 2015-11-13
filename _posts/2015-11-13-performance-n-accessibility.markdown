@@ -2,7 +2,7 @@
 title:  "Performance and Accessibility"
 description:
 categories: javascript, front-end, application development
-date: 2015-10-29
+date: 2015-11-13
 ---
 
 Lately at idfive, the topic of accessibility, testing and performance has been coming up more often.
