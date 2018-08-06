@@ -32,6 +32,11 @@ github_username:  steveiscreative
 # Build settings
 markdown: kramdown
 
+autopages:
+  # Site-wide kill switch, disable here and it doesn't run at all 
+  enabled: false
+
+
 # Defaults
 permalink: /blog/:year/:month/:day/:title
 
