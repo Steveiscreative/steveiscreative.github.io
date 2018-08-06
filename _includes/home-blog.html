@@ -1,0 +1,16 @@
+<section class="section section-blog u-bkg-dark">
+    <div class="compartment compartment-narrow">
+      <h2 class="section-header">Writing</h2>
+      <ul class="posts-listing">
+          {% for post in site.posts limit:3 %}
+          <li>
+              <a href="{{post.url}}">
+                <h3>{{post.title}}</h3>
+                <p>{{post.date | date: "%B %d, %Y"}}</p>
+              </a>
+          </li>
+        {% endfor %}
+      </ul>
+      <a href="/blog" class="read-more-link">More Post</a>
+    </div>
+  </section>

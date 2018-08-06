@@ -1,0 +1,51 @@
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  $base-font-size: 18px;
+  font-size: $base-font-size;
+  line-height: 1.5;
+  @include media("10") {
+    $base-font-size: 20px;
+    font-size: $base-font-size;
+  }
+}
+
+body {
+  background: $c-secondary;
+  color: $c-primary;
+  padding: 0;
+  margin: 0;
+  font-family: "Work Sans", Arial, Helvetica, sans-serif;
+  // font-size: rem(18);
+  // @include media("10") {
+  //   font-size: 1rem;
+  // }
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: $c-primary
+}
+
+h1 {
+  font-size: rem(40);
+  margin-bottom: rem(5);
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: rem(30); 
+  margin-bottom: rem(5);
+}
+
+h3 {
+  font-size: rem(28);
+  margin-bottom: rem(5);
+  line-height: 1.2;
+}

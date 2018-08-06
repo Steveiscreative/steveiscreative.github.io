@@ -1,0 +1,38 @@
+---
+layout: default
+pagination:
+  enabled: true
+  sort_reverse: true
+  per_page: 8
+---
+<div class="container">
+  <div class="compartment compartment-narrow compartment-padded">
+    <h1 class="u-fs-large">Blog</h1>
+    <ul class="posts-listing posts-listing--alt">
+    {% for post in paginator.posts %}
+    <li>
+          <a href="{{post.url}}">
+            <h3>{{post.title}}</h3>
+            <p>{{post.date | date: "%B %d, %Y"}}</p>
+          </a>
+      </li>
+    {% endfor %}
+    </ul>
+    <div class="pagination">
+      {% if paginator.total_pages > 1 %}
+        <ul>
+          {% if paginator.previous_page %}
+          <li>
+            <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}">Newer</a>
+          </li>
+          {% endif %}
+          {% if paginator.next_page %}
+          <li>
+            <a href="{{ paginator.next_page_path | prepend: site.baseurl }}">Older</a>
+          </li>
+          {% endif %}
+        </ul>
+      {% endif %}
+    </div>
+  </div>
+</div>

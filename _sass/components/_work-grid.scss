@@ -1,0 +1,95 @@
+
+.work-grid-holder {
+  padding-left: rem(20);
+  padding-right: rem(20);
+}
+
+.work-grid {
+  @include media("6") {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.work-grid-item {
+  padding: rem(50) rem(20);
+  text-align: center;
+  position: relative;
+  border-bottom: 1px solid $c-primary;
+  transition: background 0.2s ease-in-out;
+  overflow: hidden;
+  color: $c-primary;
+  text-decoration: none;
+  display: block;
+
+  @include media("6") {
+    flex: percentage(1/2);
+    padding: rem(100) rem(20);
+    border-bottom: 1px solid $c-primary;
+
+    &:nth-child(odd) {
+      border-right: 1px solid $c-primary;
+    }
+    &:last-child {
+      border-right: transparent;
+      border-bottom: transparent;
+    }
+    &:hover {
+      background: lighten($c-secondary, 20);
+      .work-grid-item-actions {
+        transform: translateY(0);
+      }
+    }
+  }
+
+  @include media("10") {
+    flex: percentage(1/3);
+    padding: rem(100) rem(20);
+    border-bottom: transparent;
+    &:nth-child(odd) {
+      border-right: transparent;
+    }
+    &:nth-child(3n + 2) {
+      border-left: 1px solid $c-primary;
+      border-right: 1px solid $c-primary;
+      
+    }
+    &:nth-child(1n + 4) {
+      border-top: 1px solid $c-primary;
+    }
+    &:last-child  {
+      border-right-color: transparent;
+    }
+  }
+}
+
+.work-grid-item-title {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.work-grid-item-responsiblities {
+  font-size: rem(18);
+}
+
+.work-grid-item-actions {
+  @include media('6') {
+    position: absolute;
+    transform: translateY(110%);
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    transition: transform 0.3s ease-in-out;
+  }
+}
+
+.work-grid-item-button {
+  font-size: rem(14);
+  text-transform: uppercase;
+  font-weight: bold;
+  color: $c-primary;
+  text-decoration: none;
+  padding: rem(20);
+  display: block;
+  background: $c-secondary;
+}

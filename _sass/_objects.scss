@@ -1,0 +1,27 @@
+
+.wrapper {
+  margin: auto;
+  background: white;
+  @include media('8') {
+    max-width: 98%;
+  }
+}
+
+.compartment {
+  padding: 0 rem(30);
+  margin: auto;
+  @include media("10") {
+    max-width: rem(1200);
+  }
+}
+
+.compartment-narrow {
+  max-width: rem(800);
+}
+
+.compartment-padded {
+  padding: rem(40) rem(20);
+  @include media("8") {
+    padding: rem(40) rem(30);
+  }
+}

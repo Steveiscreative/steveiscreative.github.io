@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html class="no-js" lang="en">
+	{%- include head.html -%}
+	<body>
+    <div class="wrapper">
+      {%- include header.html -%}
+      <main  role="main" class="compartment compartment-narrow compartment-padded">
+        <article class="post">
+          <div class="post-header">
+              <h1 class="post-title">{{ page.title }}</h1>
+              <time class="post-published" datetime="{{page.date}}">{{page.date | date: "%B %d, %Y"}}</time>
+          </div>
+          <div class="post-content">
+              {{- content -}}
+          </div>            
+        </article>
+        <div class="pagination pagination--post">  
+            {% if page.previous.url %}  
+              <a class="prev" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a>  
+            {% endif %}  
+            {% if page.next.url %}  
+              <a class="next" href="{{page.next.url}}">{{page.next.title}} &raquo;</a>  
+            {% endif %}  
+          </div>    
+      </main>
+      {%- include footer.html -%}
+    </div>
+	</body>
+</html>

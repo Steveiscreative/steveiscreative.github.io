@@ -1,0 +1,16 @@
+<section id="work" class="section section-work">
+    <h2 class="section-header">Work</h2>
+    <div class="work-grid-holder">
+      <div class="work-grid">
+        {% for item in site.projects %}
+          <a href="{{item.permalink}}" class="work-grid-item">
+            <h3 class="work-grid-item-title">{{item.title}}</h3>
+            <p class="work-grid-item-responsiblities">{{item.responsibilities}}</p>
+            <div class="work-grid-item-actions">
+              <div class="work-grid-item-button">View Site</div>
+            </div>
+          </a>
+        {% endfor %}
+      </div>
+    </div>
+  </section>

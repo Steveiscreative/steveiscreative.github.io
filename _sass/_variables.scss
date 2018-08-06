@@ -1,0 +1,31 @@
+// Colors
+// -----------------------------------------
+// Breakpoints
+// -----------------------------------------
+$breakpoints: ( ("1", "(min-width: 100px)"),
+("2", "(min-width: 200px)"),
+("3", "(min-width: 300px)"),
+("4", "(min-width: 400px)"),
+("5", "(min-width: 500px)"),
+("6", "(min-width: 600px)"),
+("7", "(min-width: 700px)"),
+("8", "(min-width: 800px)"),
+("9", "(min-width: 9000px)"),
+("10", "(min-width: 1000px)"),
+("11", "(min-width: 1100px)"),
+("12", "(min-width: 1200px)"),
+("13", "(min-width: 1300px)"),
+("14", "(min-width: 1400px)"),
+("15", "(min-width: 1500px)"),
+("16", "(min-width: 1600px)"));
+
+
+// Fonts
+// -----------------------------------------
+// Sizes
+$base-font-size: 20px;
+
+// Families
+// $ff-helvetica: "";
+$c-primary: #333;
+$c-secondary: goldenrod;
