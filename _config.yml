@@ -51,6 +51,7 @@ defaults:
 plugins:
   - jekyll-feed
   - jekyll-redirect-from
+  - jekyll-paginate
 
 sass:
   sass_dir: _sass
@@ -65,18 +66,11 @@ collections:
         values:
           layout: "project"
 
-pagination:
-  enabled: true
-  permalink: '/blog/page/:num/'
-  indexpage: 'blog'
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+# pagination:
+#   enabled: true
+#   permalink: '/blog/page/:num/'
+#   indexpage: 'blog'
+
+# Pagination 
+paginate: 5
+paginate_path: '/blog/page:num/'
