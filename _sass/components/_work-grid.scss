@@ -1,7 +1,7 @@
 
 .work-grid-holder {
-  padding-left: rem(20);
-  padding-right: rem(20);
+  // padding-left: rem(20);
+  // padding-right: rem(20);
 }
 
 .work-grid {
@@ -34,7 +34,7 @@
       border-right: transparent;
       border-bottom: transparent;
     }
-    &:hover {
+    &:hover, &:focus-within {
       background: lighten($c-secondary, 20);
       .work-grid-item-actions {
         transform: translateY(0);
@@ -91,5 +91,7 @@
   text-decoration: none;
   padding: rem(20);
   display: block;
+  width: 100%;
   background: $c-secondary;
+  border: none;
 }
