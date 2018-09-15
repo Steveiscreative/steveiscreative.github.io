@@ -2,8 +2,7 @@
 layout: default
 pagination:
   enabled: true
-  sort_reverse: true
-  per_page: 8
+  per_page: 5
 ---
 <div class="container">
   <div class="compartment compartment-narrow compartment-padded">
