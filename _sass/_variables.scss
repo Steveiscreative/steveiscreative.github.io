@@ -26,6 +26,8 @@ $breakpoints: ( ("1", "(min-width: 100px)"),
 $base-font-size: 20px;
 
 // Families
-// $ff-helvetica: "";
+$sansSerif: 'Work Sans',  Arial, Helvetica, sans-serif;
+$serif: 'Playfair Display', serif; 
+// Colors
 $c-primary: #333;
 $c-secondary: goldenrod;
