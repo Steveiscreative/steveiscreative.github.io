@@ -4,8 +4,10 @@ title: About Me
 permalink: /about/
 ---
 
-<p class="lead">I'm a full-stack web developer living in Baltimore, Maryland.</p>
+Hello there. I'm a web developer living in Baltimore, Maryland. 
 
-I'm currently an Assoicate Director of (Web) Development at [idfive](http://idfive.com) leading a team and developing accessible and visually appealing websites and web applications. 
+I currently work at [idfive](http://idfive.com) where I am the Associate Director of Development. It's an exciting time there as we navigate from being a medium-sized company to a large company. 
 
-When I'm not working or thinking about websites, I like to spend time with my wife and daughters. I'm also a professional binge watcher.
+This site is an ongoing experiment to try out new ideas, work on my writing, and share what I've learned along the way. So, excuse the mess, some occasional profanity, and shitty grammar... It's a work in progress.
+
+When I'm not working or thinking about websites, I like to spend time with my family and doing things with my hands.  
